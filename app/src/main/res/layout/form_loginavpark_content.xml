@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:foregroundGravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img_1949" />
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warnaBackgroundButton"
+        android:onClick="onLoginClick"
+        android:text="Login"
+        android:textColor="@color/warnaTextButton" />
+
+    <TextView
+        android:id="@+id/loginregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:onClick="onLoginRegisterClick"
+        android:text="Sign Up !!"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Or Sign in With : "
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/logingoogle"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="onLoginGoogleClick"
+        android:src="@drawable/signin_google_3" />
+</LinearLayout>

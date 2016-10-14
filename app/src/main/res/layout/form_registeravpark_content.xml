@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img_1949" />
+
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/registerpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/registerconfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Passowrd"
+        android:inputType="textPassword" />
+
+    <!-- Radio Button Buat Select Gender-->
+    <RadioGroup
+        android:id="@+id/RBgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etregishp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RBmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVgender"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:checked="false"
+            android:gravity="center"
+            android:onClick="onClickGender"
+            android:text="@string/genderMale" />
+
+        <RadioButton
+            android:id="@+id/RBfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVgender"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/RBmale"
+            android:layout_toRightOf="@+id/RBmale"
+            android:onClick="onClickGender"
+            android:text="@string/genderFemale" />
+
+        <TextView
+            android:id="@+id/selectedGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLogin"
+            android:layout_alignBottom="@+id/btnLogin"
+            android:layout_toLeftOf="@+id/btnLogin"
+            android:layout_toStartOf="@+id/btnLogin"
+            android:text="@string/emptyString"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+    </RadioGroup>
+
+    <!-- Text Field No Hp-->
+    <EditText
+        android:id="@+id/registerhp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etregisfname"
+        android:hint="No Hp"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/warnaBackgroundButton"
+        android:backgroundTint="@color/warnaBackgroundButton"
+        android:onClick="onRegisterClick"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/registerlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:onClick="onRegisterLoginClick"
+        android:text="Have an Account !!"
+        android:textSize="15dp" />
+</LinearLayout>

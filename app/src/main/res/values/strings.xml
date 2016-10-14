@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AvparkProject2</string>
+    <string name="action_settings">Settings</string>
+
+    <!--General String Values-->
+    <string name="emptyString" />
+
+    <!-- Register Values String-->≈
+    <string name="title_activity_register">Register Form Activity</string>
+    <string name="gender" />
+    <string name="genderMale">Male</string>
+    <string name="genderFemale">Female</string>
+    <string name="fajarm">fajarmucharom</string>
+    <string name="tampan">kamu tampan</string>
+    <string name="element_text">element_text</string>
+    <string name="username">username</string>
+    <string name="useremail">useremail</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_avpark_navigation_drawer">AvparkNavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
